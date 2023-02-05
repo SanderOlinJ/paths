@@ -11,10 +11,10 @@ public class Passage {
 
     public Passage(String title, String content){
         if (title == null || content == null){
-            throw new IllegalArgumentException("Title or content cannot be null!");
+            throw new IllegalArgumentException("Passage-Title or Passage-Content cannot be null!");
         }
         if (title.isEmpty() || content.isEmpty()){
-            throw new IllegalArgumentException("Title of content cannot be empty!");
+            throw new IllegalArgumentException("Passage-Title or Passage-Content cannot be empty!");
         }
         this.title = title;
         this.content = content;
@@ -31,7 +31,7 @@ public class Passage {
 
     public boolean addLink(Link link){
         if (link == null){
-            throw new IllegalArgumentException("Link cannot be null!");
+            throw new IllegalArgumentException("Passage-Link cannot be null!");
         }
         return links.add(link);
     }

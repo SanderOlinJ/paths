@@ -12,10 +12,10 @@ public class Link {
 
     public Link(String text, String reference){
         if (text == null || reference == null){
-            throw new IllegalArgumentException("Text or reference cannot be null!");
+            throw new IllegalArgumentException("Link-Text or Link-Reference cannot be null!");
         }
         if (text.isEmpty() || reference.isEmpty()){
-            throw new IllegalArgumentException("Text or reference cannot be empty!");
+            throw new IllegalArgumentException("Link-Text or Link-reference cannot be empty!");
         }
         this.text = text;
         this.reference = reference;
@@ -32,7 +32,7 @@ public class Link {
 
     public void addAction(Action action){
         if (action == null){
-            throw new IllegalArgumentException("Action cannot be null!");
+            throw new IllegalArgumentException("Link-Action cannot be null!");
         }
         actions.add(action);
     }

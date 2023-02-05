@@ -11,7 +11,10 @@ public class Story {
 
     public Story(String title, Passage openingPassage){
         if (title == null || openingPassage == null){
-            throw new IllegalArgumentException("Title or openingPassage cannot be null!");
+            throw new IllegalArgumentException("Story-Title or Story-OpeningPassage cannot be null!");
+        }
+        if (title.isEmpty()){
+            throw new IllegalArgumentException("Story-Title cannot be empty!");
         }
         this.title = title;
         this.openingPassage = openingPassage;
@@ -29,14 +32,14 @@ public class Story {
 
     public void addPassage(Passage passage){
         if (passage == null){
-            throw new IllegalArgumentException("Passage cannot be null!");
+            throw new IllegalArgumentException("Story-Passage cannot be null!");
         }
         passages.put(new Link(passage.getTitle(), passage.getTitle()), passage);
     }
 
     public Passage getPassage(Link link){
         if (link == null){
-            throw new IllegalArgumentException("Link cannot be null");
+            throw new IllegalArgumentException("Story-Link cannot be null");
         }
         return passages.get(link);
     }
