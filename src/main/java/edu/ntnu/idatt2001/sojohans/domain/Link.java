@@ -1,6 +1,7 @@
 package edu.ntnu.idatt2001.sojohans.domain;
 
-import javax.swing.*;
+import edu.ntnu.idatt2001.sojohans.domain.actions.Action;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

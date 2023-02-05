@@ -38,6 +38,10 @@ public class Player {
         this.health += health;
     }
 
+    public int getHealth() {
+        return health;
+    }
+
     public void addScore(int score){
         this.score += score;
     }
