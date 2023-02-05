@@ -19,7 +19,7 @@ class HealthActionTest {
     @Test
     void testThatHealthActionHandlesException(){
         Player player = new Player("Name", 100, 100, 100);
-        HealthAction healthAction = new HealthAction(-100);
+        HealthAction healthAction = new HealthAction(-101);
 
         assertThrows(ActionException.class, () ->
                 healthAction.execute(player));

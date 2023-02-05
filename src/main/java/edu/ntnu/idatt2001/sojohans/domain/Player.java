@@ -17,8 +17,8 @@ public class Player {
         if (name.isEmpty()){
             throw new IllegalArgumentException("Player-Name cannot be empty!");
         }
-        if (health <= 0){
-            throw new IllegalArgumentException("Player-Health cannot be less than or equals to 0");
+        if (health < 0){
+            throw new IllegalArgumentException("Player-Health cannot be less than 0");
         }
         this.name = name;
         this.health = health;
@@ -32,8 +32,8 @@ public class Player {
     }
 
     public void addHealth(int health){
-        if (this.health + health <= 0){
-            throw new IllegalArgumentException("Player-Health cannot be less than or equals to 0");
+        if (this.health + health < 0){
+            throw new IllegalArgumentException("Player-Health cannot be less than 0");
         }
         this.health += health;
     }
