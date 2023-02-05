@@ -3,7 +3,7 @@ package edu.ntnu.idatt2001.sojohans.domain.goals;
 import edu.ntnu.idatt2001.sojohans.domain.Player;
 
 public class HealthGoal implements Goal{
-    private int minimumHealth;
+    private final int minimumHealth;
 
     public HealthGoal(int minimumHealth){
         if (minimumHealth < 0){

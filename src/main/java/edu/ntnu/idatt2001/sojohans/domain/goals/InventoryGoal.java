@@ -5,7 +5,7 @@ import edu.ntnu.idatt2001.sojohans.domain.Player;
 import java.util.List;
 
 public class InventoryGoal implements Goal{
-    private List<String> mandatoryItems;
+    private final List<String> mandatoryItems;
 
     public InventoryGoal(List<String> mandatoryItems){
         if (mandatoryItems == null){

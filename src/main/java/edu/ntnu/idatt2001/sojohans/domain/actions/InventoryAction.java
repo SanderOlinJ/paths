@@ -3,7 +3,7 @@ package edu.ntnu.idatt2001.sojohans.domain.actions;
 import edu.ntnu.idatt2001.sojohans.domain.Player;
 
 public class InventoryAction implements Action{
-    private String item;
+    private final String item;
 
     public InventoryAction(String item){
         if (item == null){

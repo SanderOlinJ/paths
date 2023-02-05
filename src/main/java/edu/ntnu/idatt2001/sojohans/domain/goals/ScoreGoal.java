@@ -3,7 +3,7 @@ package edu.ntnu.idatt2001.sojohans.domain.goals;
 import edu.ntnu.idatt2001.sojohans.domain.Player;
 
 public class ScoreGoal implements Goal{
-    private int minimumPoints;
+    private final int minimumPoints;
 
     public ScoreGoal(int minimumPoints){
         this.minimumPoints = minimumPoints;

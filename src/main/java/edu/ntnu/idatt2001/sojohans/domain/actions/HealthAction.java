@@ -3,7 +3,7 @@ package edu.ntnu.idatt2001.sojohans.domain.actions;
 import edu.ntnu.idatt2001.sojohans.domain.Player;
 
 public class HealthAction implements Action{
-    private int health;
+    private final int health;
 
     public HealthAction(int health){
         this.health = health;
