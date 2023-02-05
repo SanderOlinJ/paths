@@ -12,7 +12,7 @@ public class Link {
 
     public Link(String text, String reference){
         if (text == null || reference == null){
-            throw new IllegalArgumentException("Text or reference cannot be null");
+            throw new IllegalArgumentException("Text or reference cannot be null!");
         }
         this.text = text;
         this.reference = reference;
@@ -41,10 +41,10 @@ public class Link {
     @Override
     public String toString() {
         return "Link{ \n" +
-                "text= '" + text + '\'' +
-                ", reference= '" + reference + '\'' +
-                ", actions= " + actions +
-                '}';
+                "   text= '" + text + '\'' + "\n" +
+                "   reference= '" + reference + '\'' + "\n" +
+                "   actions= " + actions + "\n" +
+                "}\n";
     }
 
     @Override
