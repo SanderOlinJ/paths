@@ -1,16 +1,23 @@
 package edu.ntnu.idatt2001.sojohans.domain;
 
+import edu.ntnu.idatt2001.sojohans.domain.goals.Goal;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Game {
-    private Player player;
-    private Story story;
+    private final Player player;
+    private final Story story;
+    private final List<Goal> goals;
 
-    public Game(Player player, Story story){
-        if (player == null || story == null){
-            throw new IllegalArgumentException("Game-Player or Game-Story cannot be null!");
+    public Game(Player player, Story story, List<Goal> goals){
+        if (player == null || story == null || goals == null){
+            throw new IllegalArgumentException("Game-Player, Game-Story or Game-Goals cannot be null!");
         }
-
         this.player = player;
         this.story = story;
+        this.goals = new ArrayList<>();
+        this.goals.addAll(goals);
     }
 
     public Player getPlayer() {
@@ -19,6 +26,10 @@ public class Game {
 
     public Story getStory() {
         return story;
+    }
+
+    public List<Goal> getGoals() {
+        return goals;
     }
 
     public Passage begin(){
