@@ -13,6 +13,9 @@ public class Passage {
         if (title == null || content == null){
             throw new IllegalArgumentException("Title or content cannot be null!");
         }
+        if (title.isEmpty() || content.isEmpty()){
+            throw new IllegalArgumentException("Title of content cannot be empty!");
+        }
         this.title = title;
         this.content = content;
         this.links = new ArrayList<>();

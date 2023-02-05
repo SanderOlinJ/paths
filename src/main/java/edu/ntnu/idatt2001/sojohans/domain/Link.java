@@ -14,6 +14,9 @@ public class Link {
         if (text == null || reference == null){
             throw new IllegalArgumentException("Text or reference cannot be null!");
         }
+        if (text.isEmpty() || reference.isEmpty()){
+            throw new IllegalArgumentException("Text or reference cannot be empty!");
+        }
         this.text = text;
         this.reference = reference;
         this.actions = new ArrayList<>();
