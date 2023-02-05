@@ -11,6 +11,9 @@ public class Link {
     private List<Action> actions;
 
     public Link(String text, String reference){
+        if (text == null || reference == null){
+            throw new IllegalArgumentException("Text or reference cannot be null");
+        }
         this.text = text;
         this.reference = reference;
         this.actions = new ArrayList<>();
@@ -25,6 +28,9 @@ public class Link {
     }
 
     public void addAction(Action action){
+        if (action == null){
+            throw new IllegalArgumentException("Action cannot be null!");
+        }
         actions.add(action);
     }
 
