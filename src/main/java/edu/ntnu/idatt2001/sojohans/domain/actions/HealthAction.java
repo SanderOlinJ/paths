@@ -12,7 +12,7 @@ public class HealthAction implements Action{
     @Override
     public void execute(Player player) {
         if (player.getHealth() + this.health <= 0){
-            throw new IllegalArgumentException("Health-Action cannot give Player a health less than or equal to 0!");
+            throw new ActionException("Health-Action cannot give Player a health less than or equal to 0!");
         }
         player.addHealth(health);
     }

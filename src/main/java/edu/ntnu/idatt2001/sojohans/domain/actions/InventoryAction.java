@@ -7,10 +7,10 @@ public class InventoryAction implements Action{
 
     public InventoryAction(String item){
         if (item == null){
-            throw new IllegalArgumentException("InventoryAction-Item cannot be null!");
+            throw new ActionException("InventoryAction-Item cannot be null!");
         }
         if (item.isEmpty()){
-            throw new IllegalArgumentException("InventoryAction-Item cannot be empty!");
+            throw new ActionException("InventoryAction-Item cannot be empty!");
         }
         this.item = item;
     }
