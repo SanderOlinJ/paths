@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LinkTest {
 
     @Test
-    void testThatConstructorThrowsExceptionOnIllegalArgument(){
+    void testThatLinkConstructorThrowsExceptionOnIllegalArgument(){
         String text = "text";
         String reference = null;
 

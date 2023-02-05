@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PassageTest {
 
     @Test
-    void testThatConstructorHandlesExceptions(){
+    void testThatPassageConstructorHandlesExceptions(){
         String title = null;
         String content = "Empty";
 
