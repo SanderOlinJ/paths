@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.Objects;
 
 public class Passage {
-    private String title;
-    private String content;
-    private List<Link> links;
+    private final String title;
+    private final String content;
+    private final List<Link> links;
 
     public Passage(String title, String content){
         if (title == null || content == null){

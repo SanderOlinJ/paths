@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Objects;
 
 public class Link {
-    private String text;
-    private String reference;
-    private List<Action> actions;
+    private final String text;
+    private final String reference;
+    private final List<Action> actions;
 
     public Link(String text, String reference){
         if (text == null || reference == null){
