@@ -3,7 +3,6 @@ package edu.ntnu.idatt2001.sojohans.domain;
 import edu.ntnu.idatt2001.sojohans.domain.goals.Goal;
 import edu.ntnu.idatt2001.sojohans.domain.goals.ScoreGoal;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
 

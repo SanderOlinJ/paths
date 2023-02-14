@@ -2,10 +2,8 @@ package edu.ntnu.idatt2001.sojohans.domain.goals;
 
 import edu.ntnu.idatt2001.sojohans.domain.Player;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class InventoryGoalTest {

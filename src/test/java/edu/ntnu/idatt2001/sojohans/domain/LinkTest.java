@@ -3,8 +3,6 @@ package edu.ntnu.idatt2001.sojohans.domain;
 import edu.ntnu.idatt2001.sojohans.domain.actions.Action;
 import org.junit.jupiter.api.Test;
 
-import javax.swing.*;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class LinkTest {
@@ -25,5 +23,17 @@ class LinkTest {
         Link link = new Link("Text", "Reference");
         assertThrows(IllegalArgumentException.class, () ->
                 link.addAction(action));
+    }
+
+    @Test
+    void testThatGetTextReturnsCorrectly(){
+        Link link = new Link("Text", "Reference");
+        assertEquals("Text", link.getText());
+    }
+
+    @Test
+    void testThatGetReferenceReturnsCorrectly(){
+        Link link = new Link("Text", "Reference");
+        assertEquals("Reference", link.getReference());
     }
 }

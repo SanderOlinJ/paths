@@ -2,7 +2,6 @@ package edu.ntnu.idatt2001.sojohans.domain.goals;
 
 import edu.ntnu.idatt2001.sojohans.domain.Player;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class ScoreGoalTest {

@@ -1,7 +1,6 @@
 package edu.ntnu.idatt2001.sojohans.domain;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class StoryTest {
@@ -30,5 +29,13 @@ class StoryTest {
         story.addPassage(passage);
 
         assertEquals(2, story.getPassages().size());
+    }
+
+    @Test
+    void testThatGetStoryReturnsCorrectly(){
+        Passage openingPassage = new Passage("Title", "Content");
+        Story story = new Story("Title", openingPassage);
+
+        assertEquals("Title", story.getTitle());
     }
 }

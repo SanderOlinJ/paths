@@ -1,9 +1,7 @@
 package edu.ntnu.idatt2001.sojohans.domain;
 
 import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class PassageTest {
@@ -33,5 +31,11 @@ class PassageTest {
         passage.addLink(link);
 
         assertTrue(passage.hasLinks());
+    }
+
+    @Test
+    void testThatGetContentReturnsCorrectly(){
+        Passage passage = new Passage("Title", "Content");
+        assertEquals("Content", passage.getContent());
     }
 }

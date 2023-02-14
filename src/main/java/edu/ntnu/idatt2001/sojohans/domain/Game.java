@@ -1,7 +1,6 @@
 package edu.ntnu.idatt2001.sojohans.domain;
 
 import edu.ntnu.idatt2001.sojohans.domain.goals.Goal;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,7 +1,6 @@
 package edu.ntnu.idatt2001.sojohans.domain;
 
 import edu.ntnu.idatt2001.sojohans.domain.actions.Action;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -12,12 +11,12 @@ public class Link {
     private final List<Action> actions;
 
     public Link(String text, String reference){
-        if (text == null || reference == null){
-            throw new IllegalArgumentException("Link-Text or Link-Reference cannot be null!");
-        }
-        if (text.isEmpty() || reference.isEmpty()){
+            if (text == null || reference == null){
+                throw new IllegalArgumentException("Link-Text or Link-Reference cannot be null!");
+            }
+            if (text.isEmpty() || reference.isEmpty()){
             throw new IllegalArgumentException("Link-Text or Link-reference cannot be empty!");
-        }
+            }
         this.text = text;
         this.reference = reference;
         this.actions = new ArrayList<>();
